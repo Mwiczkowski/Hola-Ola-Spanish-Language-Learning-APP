@@ -1,7 +1,6 @@
 package com.hola.ola
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
@@ -34,10 +33,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 password.text.toString()
             )
         ) {
-            Log.d("PASSWORD SUCCESSFUL", password.text.toString())
             Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
         } else {
-            Log.d("PASSWORD FAILED", password.text.toString())
             Toast.makeText(this, "Login Failed", Toast.LENGTH_SHORT).show()
         }
     }
