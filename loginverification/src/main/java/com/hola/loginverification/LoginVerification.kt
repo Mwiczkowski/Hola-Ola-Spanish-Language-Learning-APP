@@ -1,8 +1,10 @@
 package com.hola.loginverification
 
 class LoginVerification {
-    fun verifyEmailAndPassword(email: String, password: String): Boolean {
-        return email == "test@holaola.com"
-        password == "test123"
+    fun verifyCredentials(email: String, password: String): Boolean {
+        return (email == "test@holaola.com" &&
+                password == "test123") ||
+                (email == "admin@holaola.com" &&
+                        password == "admin123")
     }
 }
